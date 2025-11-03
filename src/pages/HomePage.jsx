@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomePage.css';
+import Slideshow from '../components/Slideshow';
 
 function HomePage() {
   return (
@@ -10,9 +11,11 @@ function HomePage() {
           <p className="hero-subtitle">We are the consulting service for your company!</p>
         </div>
         <div className="hero-image">
-          <img src="/images/NYC.png" alt="New York City" />
+          <div className="hero-image-placeholder">🏙️</div>
         </div>
       </div>
+
+      <Slideshow />
       
       <div className="about-preview">
         <h2>What does IOTTech Consulting do?</h2>

@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navigation.css';
 
 function Navigation({ activePage, setActivePage }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleNavClick = (page) => {
+    setActivePage(page);
+    setIsMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <div className="header-container">
@@ -10,12 +21,12 @@ function Navigation({ activePage, setActivePage }) {
           <span className="logo-text">IOTTech Consulting</span>
         </div>
         <nav className="nav">
-          <ul className="nav-menu">
+          <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <li>
               <a 
                 href="#home" 
                 className={`nav-link ${activePage === 'home' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); setActivePage('home'); }}
+                onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}
               >
                 Home
               </a>
@@ -24,7 +35,7 @@ function Navigation({ activePage, setActivePage }) {
               <a 
                 href="#about" 
                 className={`nav-link ${activePage === 'about' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); setActivePage('about'); }}
+                onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}
               >
                 About Us
               </a>
@@ -33,7 +44,7 @@ function Navigation({ activePage, setActivePage }) {
               <a 
                 href="#services" 
                 className={`nav-link ${activePage === 'services' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); setActivePage('services'); }}
+                onClick={(e) => { e.preventDefault(); handleNavClick('services'); }}
               >
                 Services
               </a>
@@ -42,7 +53,7 @@ function Navigation({ activePage, setActivePage }) {
               <a 
                 href="#case-studies" 
                 className={`nav-link ${activePage === 'case-studies' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); setActivePage('case-studies'); }}
+                onClick={(e) => { e.preventDefault(); handleNavClick('case-studies'); }}
               >
                 Case Studies
               </a>
@@ -51,13 +62,16 @@ function Navigation({ activePage, setActivePage }) {
               <a 
                 href="#contact" 
                 className={`nav-link ${activePage === 'contact' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); setActivePage('contact'); }}
+                onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}
               >
                 Contact Us
               </a>
             </li>
           </ul>
-          <div className="hamburger">
+          <div 
+            className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+            onClick={toggleMenu}
+          >
             <span></span>
             <span></span>
             <span></span>
