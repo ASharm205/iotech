@@ -3,7 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage';
+import ServicesPage from './pages/ServiceDetailPage';
 import SoftwareDetailPage from './pages/SoftwareDetailPage';
 import ManagementDetailPage from './pages/ManagementDetailPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';

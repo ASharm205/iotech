@@ -23,49 +23,44 @@ function Navigation({ activePage, setActivePage }) {
         <nav className="nav">
           <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <li>
-              <a 
-                href="#home" 
+              <button
                 className={`nav-link ${activePage === 'home' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}
+                onClick={() => handleNavClick('home')}
               >
                 Home
-              </a>
+              </button>
             </li>
             <li>
-              <a 
-                href="#about" 
+              <button
                 className={`nav-link ${activePage === 'about' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}
+                onClick={() => handleNavClick('about')}
               >
                 About Us
-              </a>
+              </button>
             </li>
             <li>
-              <a 
-                href="#services" 
+              <button
                 className={`nav-link ${activePage === 'services' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); handleNavClick('services'); }}
+                onClick={() => handleNavClick('services')}
               >
                 Services
-              </a>
+              </button>
             </li>
             <li>
-              <a 
-                href="#case-studies" 
+              <button
                 className={`nav-link ${activePage === 'case-studies' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); handleNavClick('case-studies'); }}
+                onClick={() => handleNavClick('case-studies')}
               >
                 Case Studies
-              </a>
+              </button>
             </li>
             <li>
-              <a 
-                href="#contact" 
+              <button
                 className={`nav-link ${activePage === 'contact' ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}
+                onClick={() => handleNavClick('contact')}
               >
                 Contact Us
-              </a>
+              </button>
             </li>
           </ul>
           <div 
