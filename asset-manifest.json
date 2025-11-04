@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iotech/static/css/main.7d4fa18d.css",
+    "main.js": "/iotech/static/js/main.aaea38fe.js",
+    "index.html": "/iotech/index.html",
+    "main.7d4fa18d.css.map": "/iotech/static/css/main.7d4fa18d.css.map",
+    "main.aaea38fe.js.map": "/iotech/static/js/main.aaea38fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d4fa18d.css",
+    "static/js/main.aaea38fe.js"
+  ]
+}
