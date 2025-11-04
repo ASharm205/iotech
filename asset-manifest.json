@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/iotech/static/css/main.7d4fa18d.css",
-    "main.js": "/iotech/static/js/main.27d0c5f3.js",
+    "main.css": "/iotech/static/css/main.3da502b2.css",
+    "main.js": "/iotech/static/js/main.96dd36fc.js",
     "index.html": "/iotech/index.html",
-    "main.7d4fa18d.css.map": "/iotech/static/css/main.7d4fa18d.css.map",
-    "main.27d0c5f3.js.map": "/iotech/static/js/main.27d0c5f3.js.map"
+    "main.3da502b2.css.map": "/iotech/static/css/main.3da502b2.css.map",
+    "main.96dd36fc.js.map": "/iotech/static/js/main.96dd36fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d4fa18d.css",
-    "static/js/main.27d0c5f3.js"
+    "static/css/main.3da502b2.css",
+    "static/js/main.96dd36fc.js"
   ]
 }
