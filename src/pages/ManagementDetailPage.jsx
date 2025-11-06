@@ -10,7 +10,7 @@ function ManagementDetailPage({ setActivePage }) {
         </button>
         <h2>Management Solutions</h2>
         <div className="service-hero">
-          <img src="/images/mange.png" alt="Management Solutions" />
+          <img src="images/mange.png" alt="Management Solutions" />
         </div>
         <div className="service-content">
           <h3>Business Management</h3>
